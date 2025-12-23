@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target Render Portfolio</title>
+    <link rel="icon" href="assets/TargetRender.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="assets/TargetRender.png" alt="Logo" class="header-logo"> Target Render</div>
+            <ul>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-section">
+            <h1>Innovate. Visualize. Animate.</h1>
+            <p>Crafting immersive 3D product visualizations and captivating animations that bring concepts to life.</p>
+            <div class="render-toggle">
+                <button id="blender-viewport">Blender Viewport</button>
+                <button id="final-cycles-render">Final Cycles Render</button>
+            </div>
+            <video id="background-video" autoplay loop muted playsinline loading="lazy">
+                <source src="assets/PepsiRenderVideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img id="background-image" src="assets/placeholder_render.svg" alt="Blender Viewport Render" loading="lazy">
+        </div>
+    </header>
+
+    <main>
+        <section id="work" class="video-gallery">
+            <h2>Featured Work</h2>
+            <div class="gallery-grid">
+                <div class="video-item">
+                    <h3>Pepsi Can Render - Cycles</h3>
+                    <video controls autoplay loop muted playsinline preload="auto" loading="lazy" onerror="console.error('Video error:', this.error.code, this.error.message);">
+                        <source src="assets/PepsiRenderVideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <p>As a dedicated 3D Motion Designer, I specialize in transforming concepts into stunning visual realities. My expertise lies in crafting hyper-realistic product visualizations, intricate fluid simulations, and dynamic animations that captivate audiences and elevate brand narratives. I am committed to pushing the boundaries of visual storytelling through innovative 3D design.</p>
+            <div class="skills-section">
+                <h3>My Expertise</h3>
+                <div class="skills-grid">
+                    <span class="skill-tag">Blender 3D</span>
+                    <span class="skill-tag">Animation</span>
+                    <span class="skill-tag">Product Design</span>
+                    <span class="skill-tag">Texturing</span>
+                    <span class="skill-tag">Fluid Simulations</span>
+  
+                    <span class="skill-tag">Hard Surface Modeling</span>
+                    <span class="skill-tag">Sculpting</span>
+                    <span class="skill-tag">Retopology</span>
+                    <span class="skill-tag">UV Unwrapping</span>
+                    <span class="skill-tag">Lighting & Rendering</span>
+                    <span class="skill-tag">Compositing</span>
+                    <span class="skill-tag">Motion Graphics</span>
+                    <span class="skill-tag">Technical Art/Scripting (Python)</span>
+                    <span class="skill-tag">Project Management</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Get in Touch</h2>
+            <div class="contact-info">
+                <p>Ready to collaborate or have a question? Reach out!</p>
+                <p class="contact-detail"><span class="icon">📞</span> <a href="tel:+96878235146">+968 7823 5146</a></p>
+                <p class="contact-detail"><span class="icon">📧</span> <a href="mailto:dwarklin@gmail.com">dwarklin@gmail.com</a></p>
+                <p class="contact-detail"><a href="https://www.instagram.com/targetrender/" target="_blank" aria-label="Instagram"><img src="assets/instaicon.png" alt="Instagram" class="social-icon"></a></p>
+            </div>
+    <script src="script.js"></script>
+</body>
+</html>
